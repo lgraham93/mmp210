@@ -6,7 +6,10 @@
 var eyecolor='275'; 
 var facecolor= '350';
 var bloodthickness='20';
-var earcolor='175';
+var eary1='175';
+var earx1='160';
+var earx2='560';
+var earsize1='250';
 var eyeball='280';
 
 function setup() {
@@ -18,23 +21,28 @@ function draw() {
     background(220);
     //ears
     fill("black");
-    ellipse(160,earcolor,250);
-    ellipse(560,earcolor,250);
+    ellipse(earx1,eary1,250);
+    ellipse(earx2,eary1,250);
+    
     //head
         stroke("none")
         fill("purple");
         ellipse(facecolor,facecolor,590);
+    
     //eyes
         fill("white");
         ellipse(460,eyeball,110,200);
         ellipse(250,eyeball,110,200);
+    
     //eyecolor
         fill("red");
         ellipse(260,eyecolor,100);
         ellipse(475,eyecolor,100);
+    
     //mouth
     fill("white");
     ellipse(350, 510, 400, 310);
+    
     //nose 
     fill("black");
     ellipse(350, 440, 300, 100);
