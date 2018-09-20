@@ -3,7 +3,10 @@
     v1
     mmp210 example week 2
 */
-
+var eyecolor='red'; 
+var facecolor= 'purple';
+var bloodthickness='red';
+var earcolor='black';
 function setup() {
 	createCanvas(700, 700);
 }
@@ -21,15 +24,16 @@ function draw() {
         ellipse(350,350,590);
     //eyes
         fill("white");
-        stroke("none");
         ellipse(460,280,110,200);
         ellipse(250,280,110,200);
+    //eyecolor
         fill("red");
         ellipse(260,275,100);
         ellipse(475,275,100);
     //mouth
     fill("white");
     ellipse(350, 510, 400, 310);
+    //nose 
     fill("black");
     ellipse(350, 440, 300, 100);
     stroke("black");
