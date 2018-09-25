@@ -3,7 +3,7 @@
     v1
     mmp210 example week 2
 */
-<<<<<<< HEAD
+
 var eyecolor='275'; 
 var facecolor= '350';
 var bloodthickness='20';
@@ -12,7 +12,6 @@ var earx1='160';
 var earx2='560';
 var earsize1='250';
 var eyeball='280';
-=======
 
 //ear variables
 var earx='160';
@@ -56,8 +55,6 @@ var lipwidth='20';
 var lipheight='200'
 
 
->>>>>>> 30b8a19807e34163826affc020d93f141dea6fd1
-
 function setup() {
 	createCanvas(700, 700);
 }
@@ -67,7 +64,6 @@ function draw() {
     background(220);
     //ears
     fill("black");
-<<<<<<< HEAD
     ellipse(earx1,eary1,250);
     ellipse(earx2,eary1,250);
     
@@ -89,7 +85,6 @@ function draw() {
     //mouth
     fill("white");
     ellipse(350, 510, 400, 310);
-=======
     ellipse(earx,eary,250);
     ellipse(earx2,eary2,250);
     //head
@@ -107,7 +102,6 @@ function draw() {
     //mouth
     fill("white");
     ellipse(cheekx, cheeky, 400, 310);
->>>>>>> 30b8a19807e34163826affc020d93f141dea6fd1
     
     //nose 
     fill("black");
