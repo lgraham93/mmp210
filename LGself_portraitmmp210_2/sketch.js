@@ -62,7 +62,8 @@ function setup() {
 
 function draw() {
     //default
-    background(220);
+    background(255);
+    
     //ears
     fill("black");
     ellipse(earx1, eary1, 250);
@@ -70,7 +71,7 @@ function draw() {
 
     //head
     noStroke();
-    fill("purple");
+    fill("pink");
     ellipse(facecolor, facecolor, 590);
 
     //mouth
@@ -78,21 +79,29 @@ function draw() {
     ellipse(350, 510, 400, 310);
     ellipse(earx, eary, 250);
     ellipse(earx2, eary2, 250);
+    
+    
+    
     //head
-    stroke("none")
-    fill("pink");
+    noStroke();
+    var g=map(mouseX, 0, width, 100, 255);
+    var r = map(mouseX, 0, width, 100, 200);
+    fill(r, g, 100);
     ellipse(headwidth, headheight, 590);
+   
+    
     //eyes
     fill("white");
     ellipse(eyex, eyey, 110, 200);
     ellipse(eyex2, eyey2, 110, 200);
     
     //eyecolor
-    fill("blue");
+    r = map(mouseX, 30, height, 200, 255);
+    fill(r, 0, 200);
     pupilx = mouseX;
-    pupilx2 = mouseX + 215;
-    ellipse(pupilx, pupily, 100);
-    ellipse(pupilx2, pupily2, 100);
+    pupilx2 = mouseX + 200;
+    ellipse(pupilx, pupily, 120);
+    ellipse(pupilx2, pupily2, 120);
     
     //cheeks
     fill("white");
