@@ -7,7 +7,6 @@
 
 var eyecolor = 275;
 var facecolor = 350;
-var bloodthickness = 20;
 var eary1 = 175;
 var earx1 = 160;
 var earx2 = 560;
@@ -31,8 +30,8 @@ var eyex = 500;
 var eyex2 = 250;
 var eyey = 280;
 var eyey2 = 280;
-var eyewidth1 = 110;
-var eyeweidth2 = 110;
+var eyewidth1 = 200;
+var eyeweidth2 = 200;
 
 //pupil variables
 var pupilx = 400;
@@ -55,6 +54,10 @@ var lipy = 450;
 var lipwidth = 20;
 var lipheight = 200
 
+//my code
+var v1 = 0;
+var v2 = 0;
+var v3 = 255;
 
 function setup() {
     createCanvas(700, 700);
@@ -80,8 +83,6 @@ function draw() {
     ellipse(earx, eary, 250);
     ellipse(earx2, eary2, 250);
     
-    
-    
     //head
     noStroke();
     var g=map(mouseX, 100, width, 50, 200);
@@ -97,9 +98,10 @@ function draw() {
     
     //eyecolor
     r = map(mouseX, 20, height,100, 255);
-    fill(r, 0, 100);
     pupilx = mouseX;
     pupilx2 = mouseX + 250;
+    fill(v1,v2,v3);
+    //end
     ellipse(pupilx, pupily, 100);
     ellipse(pupilx2, pupily2, 100);
     
@@ -115,4 +117,16 @@ function draw() {
     fill("red");
     arc(345, 510, 100, 200, 0, PI);
 
+}
+
+function mousePressed() {
+  if (v1 === 0 && v2 === 0 && v3 === 255) {
+    v1 = 255;
+    v2 = 0;
+    v3 = 0;
+  } else {
+   v1 = 0;
+   v2 = 0;
+   v3 = 255
+  }
 }
