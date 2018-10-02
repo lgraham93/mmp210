@@ -27,15 +27,15 @@ var headwidth = 350;
 var headheight = 350;
 
 //eyes variables
-var eyex = 460;
-var eyex2 = 280;
+var eyex = 500;
+var eyex2 = 250;
 var eyey = 280;
 var eyey2 = 280;
 var eyewidth1 = 110;
 var eyeweidth2 = 110;
 
 //pupil variables
-var pupilx = 260;
+var pupilx = 400;
 var pupilx2 = 475;
 var pupily = 275;
 var pupily2 = 275;
@@ -84,8 +84,8 @@ function draw() {
     
     //head
     noStroke();
-    var g=map(mouseX, 0, width, 100, 255);
-    var r = map(mouseX, 0, width, 100, 200);
+    var g=map(mouseX, 100, width, 50, 200);
+    var r = map(mouseX, 0, width, 255, 200);
     fill(r, g, 100);
     ellipse(headwidth, headheight, 590);
    
@@ -96,12 +96,12 @@ function draw() {
     ellipse(eyex2, eyey2, 110, 200);
     
     //eyecolor
-    r = map(mouseX, 30, height, 200, 255);
-    fill(r, 0, 200);
+    r = map(mouseX, 20, height,100, 255);
+    fill(r, 0, 100);
     pupilx = mouseX;
-    pupilx2 = mouseX + 200;
-    ellipse(pupilx, pupily, 120);
-    ellipse(pupilx2, pupily2, 120);
+    pupilx2 = mouseX + 250;
+    ellipse(pupilx, pupily, 100);
+    ellipse(pupilx2, pupily2, 100);
     
     //cheeks
     fill("white");
