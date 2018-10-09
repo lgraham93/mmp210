@@ -1,11 +1,11 @@
+
 h1{font-family: fantasy;
     margin-left: 30%;
     color:darkslategrey;
 	font-size:65px;
-	text-decoration:underline;}
 body{font-family:verdana;
     padding:30;
-    background-color:lightgray;}
+    background-image: linear-gradient(red, yellow);}
 p{font-size:80%;
   text-align: center;}
 img {text-align:center; }
