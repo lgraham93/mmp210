@@ -1,11 +1,11 @@
-
 h1{font-family: fantasy;
     margin-left: 30%;
     color:darkslategrey;
-	font-size:65px;
+    font-size:65px;}
 body{font-family:verdana;
+    background-image: url(../LGself_portraitmmp210/gradient.jpg);
     padding:30;
-    background-image: linear-gradient(red, yellow);}
+    background-color:lightgray;}
 p{font-size:80%;
   text-align: center;}
 img {text-align:center; }
