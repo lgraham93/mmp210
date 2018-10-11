@@ -3,7 +3,6 @@
    mmp210 week 5
 */
 
-var bman;//global
 
 function preload() {
 	carlton= loadImage("carlton.jpg");
@@ -16,7 +15,9 @@ function setup (){
 
 function draw(){
     
+    
     	image(carlton, 0, 0, width,height);
+
     
     var paragraph= "When your professor tells a corny joke";
     text(paragraph, 40, 20, 300, 100);
